@@ -15,5 +15,5 @@
   --gradient-to: #ffffff;
 }
 .bg-custom {
-  background-image: url('/assests/bg.jpg');
+  background-image: url('bg.jpg');
 }
