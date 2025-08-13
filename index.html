@@ -11,15 +11,17 @@
 <body>
 <header class="bg-gradient-to-r from-gradFrom via-gradVia1 via-gradVia2 to-gradTo shadow py-2 px-6">
   <nav class="flex flex-col md:flex-row items-center md:justify-between relative">
-    <div class="flex items-center space-x-2 w-full md:w-auto justify-between md:justify-start">
-      <img src="./assests/download (8).jpeg" alt="Logo" class="w-8 h-8 object-contain">
-      <span class="text-2xl font-bold text-whiteText">Nexcent</span>
-      <button class="md:hidden text-whiteText focus:outline-none" id="menu-btn">
-        <i class="fas fa-bars"></i>
+        <div class="flex items-center justify-between w-full md:w-auto">
+      <div class="flex items-center space-x-2">
+        <img src="./assests/download (8).jpeg" alt="Logo" class="w-8 h-8 object-contain">
+        <span class="text-2xl font-bold text-whiteText">Nexcent</span>
+      </div>
+      <button class="md:hidden text-whiteText" id="menu-btn">
+        <i class="fas fa-bars text-2xl"></i>
       </button>
     </div>
 
-    <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 w-full md:w-auto hidden md:flex mt-2 md:mt-0" id="menu">
+    <ul id="menu" class="hidden md:flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 mt-2 md:mt-0">
       <li><a href="#" class="text-whiteText hover:underline">Home</a></li>
       <li><a href="#" class="text-whiteText hover:underline">Service</a></li>
       <li><a href="#" class="text-whiteText hover:underline">Feature</a></li>
@@ -27,13 +29,23 @@
       <li><a href="#" class="text-whiteText hover:underline">Testimonial</a></li>
       <li><a href="#" class="text-whiteText hover:underline">FAQ</a></li>
     </ul>
-
     <div class="flex space-x-4 mt-2 md:mt-0">
-      <a href="#" class="text-whiteText hover:underline">Login</a>
-      <a href="#" class="bg-whiteText text-blackText px-4 py-1 rounded hover:bg-gray-200">Sign Up</a>
+      <a href="#" class="text-whiteText hover:underline px-4 py-1 rounded transition duration-300">Login</a>
+      <a href="#" class="bg-whiteText text-blackText px-4 py-1 rounded hover:bg-gray-200 transition duration-300">Sign Up</a>
     </div>
+
   </nav>
 </header>
+
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
 
 <section class="bg-custom bg-cover bg-center h-screen">
     <div class="flex justify-start items-center h-full px-8"> 
@@ -382,14 +394,6 @@
   </div>
 </footer>
 
-
-<script>
-  const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('menu');
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
-</script>
 
 
 </body>
