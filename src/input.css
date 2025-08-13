@@ -14,3 +14,7 @@
   --gradient-via2: #3b82f6;
   --gradient-to: #ffffff;
 }
+
+.bg-custom {
+  background-image: url('../bg.jpg');
+}
