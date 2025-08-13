@@ -14,8 +14,6 @@
   --gradient-via2: #3b82f6;
   --gradient-to: #ffffff;
 }
-
-.bagg{
-  color:red;
-  background-image: url('./assests/bg.jpg');
+.bg-custom {
+  background-image: url('/assests/bg.jpg');
 }
