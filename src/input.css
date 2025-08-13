@@ -15,6 +15,7 @@
   --gradient-to: #ffffff;
 }
 
-.bg-custom {
+.bagg{
+  color:red;
   background-image: url('./assests/bg.jpg');
 }
